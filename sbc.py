@@ -3,12 +3,12 @@
 import re
 import itertools
 
-ROLLNUM_REGEX = "201[0-9]{4}"
+#ROLLNUM_REGEX = "201[0-9]{4}"
 
 class Graph(object):
     name = "Bhavya Chopra"
     email = "bhavya18333@iiitd.ac.in"
-    roll_num = "2018333"
+    
 
     def __init__ (self, vertices, edges):
         """
@@ -45,8 +45,8 @@ class Graph(object):
         if (not isinstance(self.email, str)) or self.email == "":
             raise Exception("Email can't be empty")
 
-        if (not isinstance(self.roll_num, str)) or (not re.match(ROLLNUM_REGEX, self.roll_num)):
-            raise Exception("Invalid roll number, roll number must be a string of form 201XXXX. Provided roll number: {}".format(self.roll_num))
+        #if (not isinstance(self.roll_num, str)) or (not re.match(ROLLNUM_REGEX, self.roll_num)):
+            #raise Exception("Invalid roll number, roll number must be a string of form 201XXXX. Provided roll number: {}".format(self.roll_num))
 
         if not all([isinstance(node, int) for node in self.vertices]):
             raise Exception("All vertices should be integers")
@@ -221,8 +221,17 @@ class Graph(object):
         return s
 
 if __name__ == "__main__":
-    vertices = [1, 2, 3, 4, 5, 6]
-    edges    = [(1, 2), (1, 5), (2, 3), (2, 5), (3, 4), (4, 5), (4, 6)]
+    print("Enter all vertices, separated by space:")
+    vertices = list(map(int, input().split()))
+    print("Enter the number of edges:")
+    E = int(input())
+    print("Enter the edges:")
+    edges = []
+    for i in range(0,E):
+        e = list(map(int, input().split()))
+        T = (e[0],e[1])
+        edges.append(T)
+    #edges    = [(1, 2), (1, 5), (2, 3), (2, 5), (3, 4), (4, 5), (4, 6)]
 
     graph = Graph(vertices, edges)
     print(graph.top_k_betweenness_centrality())
