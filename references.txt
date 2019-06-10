@@ -1,0 +1,14 @@
+References:
+
+1. https://www.youtube.com/watch?v=s-CYnVz-uh4
+
+2. https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+
+3. https://www.cl.cam.ac.uk/teaching/1617/MLRD/handbook/brandes.pdf
+
+4. https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-
+search/tutorial/
+
+5. https://en.wikipedia.org/wiki/Breadth-first_search
+
+6. https://www.geeksforgeeks.org/shortest-path-unweighted-graph/
