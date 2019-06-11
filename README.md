@@ -8,9 +8,9 @@ NetworX is a program to find the nodes with the maximum betweenness centrality i
 4. Finally, enter all the edges.
 
 The output displays the following information:
-  -k(number of nodes with maximum betweenness centrality)
-  -x(maximum betweenness centrality in the graph)
-  -V(vertices having the maximum betweenness centrality)
+  - k(number of nodes with maximum betweenness centrality)
+  - x(maximum betweenness centrality in the graph)
+  - V(vertices having the maximum betweenness centrality)
 
 ## Sample Input and Output
 ### Input
