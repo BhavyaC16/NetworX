@@ -236,7 +236,7 @@ if __name__ == "__main__":
         e = list(map(int, input().split()))
         T = (e[0],e[1])
         edges.append(T)
-    #edges    = [(1, 2), (1, 5), (2, 3), (2, 5), (3, 4), (4, 5), (4, 6)]
+    
 
     graph = Graph(vertices, edges)
     print(graph.top_k_betweenness_centrality())
