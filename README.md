@@ -1,5 +1,5 @@
 # NetworX
-NetwoX is a program to find the nodes with the maximum betweenness centrality in an undirected ad unweighted graph.
+NetworX is a program to find the nodes with the maximum betweenness centrality in an undirected and unweighted graph.
 
 ## Usage
 1. Run [sbc.py](https://github.com/BhavyaC16/NetworX/blob/master/sbc.py)
